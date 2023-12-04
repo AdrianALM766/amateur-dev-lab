@@ -1,0 +1,45 @@
+h1, h2{
+    text-align: center;
+    padding: 5px;
+    background-color:#fb6a3d;
+    border-radius: 25px;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+    font-size: 15px;
+}
+img{
+    width: 500px;
+    height: 120px;
+    border-radius: 10px;
+}
+video{
+    width: 35%;
+    height: 45%;
+}
+button{
+    text-align: center;
+    padding: 5px;
+    border: none;
+    background-color:#f7cd67;
+    border-radius: 5px;
+}
+#nav, #Introduccion, #first_topic,#second_topic, #formularios{
+    background-color: #fbe5ac;
+    padding: 20px 10% 5px 10%;
+    border-radius: 45px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+body{
+    background-color:#361d20;
+    font-size: 18px;
+}
+div{
+    margin-left: 15px;
+    margin-right: 15px;
+}
