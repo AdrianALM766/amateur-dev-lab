@@ -1,2 +1,4 @@
 # amateur-dev-lab
-Ejemplo de pagina web estatica con html y css
+hola soy un estudiante de ingenieria de sistemas
+este repositorio esta para repasar y aprender html basico.
+
