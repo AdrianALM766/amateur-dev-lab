@@ -22,9 +22,10 @@ a {
     font-size: 15px;
 }
 #img {
-    width: 500px;
-    height: 120px;
     border-radius: 10px;
+    width: 100%;
+    height: auto;
+    max-width: 400px;
 }
 
 video {
@@ -40,12 +41,17 @@ button {
     height: 50px;
     margin-top: 20px;
 }
-#texto, #img_video, #listas {
+#texto, #img_video, #listas, #tabla {
     background-color: #f7f4e8;
     padding: 20px 10% 5px 10%;
     border-radius: 45px;
     margin-bottom: 10px;
     margin-top: 10px;
+}
+table,th,tr,td{
+    text-align: center;
+    background-color: #fffcf7;
+    border: black solid 2px;
 }
 header, footer {
     background-color: #daf3ea;
