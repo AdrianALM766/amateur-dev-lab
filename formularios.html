@@ -7,10 +7,20 @@
     <title>Formularios</title>
 </head>
 <body>
+    <script>
+        function actualizarLabel(valor) {
+            // Obtener el elemento label por su id
+            var label = document.getElementById("miLabel");
+            
+            // Actualizar el contenido del label con el valor del input
+            label.textContent = valor;
+        }
+    </script>
     <header>
-        <nav id="nav">
+        <nav>
             <button><a href="index.html"><img src="Imagenes\flecha_back.png" alt="AmateurDevLab"width="20px"
             height="20px" ></a></button>
+            <button><a href="#formularios">Formularios</a></button>
         </nav>
     </header>
     <div id="formularios">
@@ -20,9 +30,52 @@
         Son una parte fundamental de las páginas web interactivas y se utilizan para recopilar información <br> 
         del usuario,como nombres, contraseñas,comentarios, opciones seleccionadas, etc. Para crear un formulario en HTML, <br>
         se utiliza el elemento form</p>
+        <h3>input</h3>
+        <ul>
+            <li>se utiliza para crear diversos tipos de campos de entrada en formularios, como cajas de texto, botones,<br>
+            casillas de verificación, botones de radio, etc.</li>
+            <li>Se define mediante la etiqueta input con un atributo type que especifica el tipo de entrada que se desea crear <br>
+            por ejemplo, text para cajas de texto, checkbox para casillas de verificación (mas adelante se explica), etc.</li>
+        </ul>
+        <h3>label</h3>
+        <ul>
+            <li> se utiliza para asociar un texto descriptivo con un elemento de formulario, como un input</li>
+            <li>Se asocia con un elemento de formulario mediante el atributo for, que tiene el mismo valor que <br>
+            el atributo id del elemento de formulario al que está etiquetando</li>
+        </ul>
+        <p>lo siguiente es un ejemplo:</p>
+        <form action="#">
+            <label for="miInput">Ingresa cualquier cosa:</label>
+            <input type="text" id="miInput" oninput="actualizarLabel(this.value)">
+            <br>
+            <label for="miLabel">valor ingresado:</label>
+            <span id="miLabel"></span>
+        </form>
+        <p>Esta es una imagen del formulario anterior, lo que hace como pudiste darte cuenta <br>
+        si probaste el formulario es que recive texto y lo manda a otra variable para mostrarlo.</p>
+        <img src="Imagenes\form_1.png" alt="pedir dato y mostrar dato en otra parte" id="img">
+        <p>Este es el script que usamos para hacerlo posible:</p>
+        <img src="Imagenes\form_1_script.png" alt="script del formulario anterior" id="img">
+        <p>Este es un ejemplo de lo que se puede hacer con los formularios y un script basico mas adelante veremos tanto css como JS <br>
+        asi que si te sientes perdido al ver el script no te preocupes.</p>
+        <h3>checkbox</h3>
+        <p>En HTML, los inputs de tipo "checkbox" son elementos de formulario que permiten a los usuarios seleccionar múltiples opciones de una lista. <br>
+        Estos inputs son representados por la etiqueta input con el atributo type establecido como "checkbox". Aquí tienes un ejemplo básico: <br>
+        </p>
+        <form action="#">
+            <label for="#">Que animales tienes en tu granja?</label><br>
+            <label for="one">vaca</label>
+            <input type="checkbox" name="animals" value="vaca" id="one"><br>
+            <label for="two">caballo</label>
+            <input type="checkbox" name="animals" value="caballo" id="two"><br>
+            <label for="three">cerdos</label>
+            <input type="checkbox" name="animals" value="cerdo" id="three">
+        </form>
+        <img src="Imagenes\input_check.png" alt="uso de formulario" id="img">
     </div>
     <footer>
-        
+        <button><a href="index.html"><img src="Imagenes\flecha_back.png" alt="AmateurDevLab"width="20px"
+            height="20px" ></a></button>
     </footer>
 </body>
 </html>
