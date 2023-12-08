@@ -69,7 +69,7 @@ button {
 }
 form{
     width: auto;
-    height: 50px;
+    height: auto;
     margin-bottom: 20px;
     border: #fffcf7 solid 3px;
     border-radius: 5px;
