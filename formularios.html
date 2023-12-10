@@ -53,9 +53,9 @@
             <!--ejemplo simple-->
             <section id="ejemplo">
                 <p>lo siguiente es un ejemplo:</p>
-                <form action="#">
+                <form action="formularios.html">
                     <label for="miInput">Ingresa cualquier cosa:</label>
-                    <input type="text" id="miInput" oninput="actualizarLabel(this.value)">
+                    <input type="text" id="miInput" oninput="actualizarLabel(this.value)" value="miInput">
                     <br>
                     <label for="miLabel">valor ingresado:</label>
                     <span id="miLabel"></span>
@@ -72,7 +72,7 @@
                 <p>En HTML, los inputs de tipo "checkbox" son elementos de formulario que permiten a los usuarios seleccionar múltiples opciones de una lista. <br>
                 Estos inputs son representados por la etiqueta input con el atributo type establecido como "checkbox". Aquí tienes un ejemplo básico: <br>
                 </p>
-                <form action="#">
+                <form action="formularios.html">
                     <label for="#">Que animales tienes en tu granja?</label><br>
                     <label for="one">vaca</label>
                     <input type="checkbox" name="animals" value="vaca" id="one"><br>
@@ -81,8 +81,38 @@
                     <label for="three">cerdos</label>
                     <input type="checkbox" name="animals" value="cerdo" id="three">
                 </form>
-                <img src="Imagenes\input_check.png" alt="uso de formulario" id="img">
+                <img src="Imagenes\input_check.png" alt="uso de formulario checkbox" id="img">
+                <h3>Radio</h3>
+                <p>usamos type radio cuando tenemos mas de una opcion pero solo queremos elegir una</p>
+                <form action="formularios.html">
+                    <label for="#">cual de los siguientes animales tienes en tu granja? opcion unica</label><br>
+                    <label for="one">vaca</label>
+                    <input type="radio" name="animals" value="vaca" id="one"><br>
+                    <label for="two">caballo</label>
+                    <input type="radio" name="animals" value="caballo" id="two"><br>
+                    <label for="three">cerdos</label>
+                    <input type="radio" name="animals" value="cerdo" id="three">
+                </form>
+                <img src="Imagenes\input_radio.png" alt="uso de formulario radio" id="img">
+                <p>Podemos observar que a diferencia del formulario anterior este usa type radio y name <br>
+                es igual en todos los inputs eso es lo que causa que solo sea elegible una opcion en concreto</p>
             </section>
+            <article>
+                <hr>
+                <h3>Curiosidades</h3>
+                <h4>Checkbox</h4>
+                <p>
+                    Para hacer que un checkbox o un radio button este seleccionado por defecto, necesitas añadir el atributo checked. No hay necesidad de agregarle un <br>
+                    valor al atributo checked. Simplemente necesitas añadir la palabra checked al elemento input, asegurándote de que hay espacios entre ella y los otros atributos.
+                </p>
+                <h4>action</h4>
+                <p>
+                    action sirve para decir a donde se mandara los datos recolectados de formulario
+                </p>
+                <h4>post</h4>
+                <p>prueba modificando el codigo anterior</p>
+                <hr>
+            </article>
         </div>
     </main>
     <!--fin del main-->
