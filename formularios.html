@@ -52,7 +52,15 @@
             </section>
             <!--ejemplo simple-->
             <section id="ejemplo">
-                <p>lo siguiente es un ejemplo:</p>
+                <p>lo siguiente son ejemplos:</p>
+                <form action="formularios.html"">
+                    <label for="x">Escribe algo:</label>
+                    <input type="text" name="x" id="x">
+                </form>
+                <form action="formularios.html"">
+                    <label for="dos">Escribe nuevo:</label>
+                    <input type="text" name="dos" id="dos" required >
+                </form>
                 <form action="formularios.html">
                     <label for="miInput">Ingresa cualquier cosa:</label>
                     <input type="text" id="miInput" oninput="actualizarLabel(this.value)" value="miInput">
