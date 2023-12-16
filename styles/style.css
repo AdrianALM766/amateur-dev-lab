@@ -6,7 +6,7 @@ div, nav {
     margin-left: 15px;
     margin-right: 15px;
 }
-#texto, #img_video, #listas, #tabla,#formularios, .css {
+#texto, #img_video, #listas, #tabla,#formularios, .css , .cssU{
     background-color: #f7f4e8;
     padding: 20px 10% 5px 10%;
     border-radius: 45px;
@@ -78,6 +78,5 @@ form{
     color: #029d5f;
     margin-top: 5px;
 }
-
 
 
