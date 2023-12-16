@@ -55,20 +55,21 @@
                         el atributo id del elemento de formulario al que está etiquetando</li>
                     </ul>
             </section>
-            <!--ejemplos simples-->
-            <section id="ejemplo">
-                <p>lo siguiente son ejemplos:</p>
-                <form action="formularios.html"">
-                    <label for="x">Escribe algo:</label>
-                    <input type="text" name="x" id="x">
-                </form>
-                <form action="formularios.html"">
-                    <label for="dos">Escribe nuevo:</label>
-                    <input type="text" name="dos" id="dos" required >
-                </form>
-                <form action="formularios.html">
-                    <label for="miInput">Ingresa cualquier cosa:</label>
-                    <input type="text" id="miInput" oninput="actualizarLabel(this.value)" value="miInput">
+        </div>
+        <!--ejemplos simples-->
+        <section id="ejemplo">
+            <p>lo siguiente son ejemplos:</p>
+            <form action="formularios.html"">
+                <label for="x">Escribe algo:</label>
+                <input type="text" name="x" id="x">
+            </form>
+            <form action="formularios.html"">
+                <label for="dos">Escribe nuevo:</label>
+                <input type="text" name="dos" id="dos" required >
+            </form>
+            <form action="formularios.html">
+                <label for="miInput">Ingresa cualquier cosa:</label>
+                <input type="text" id="miInput" oninput="actualizarLabel(this.value)" value="miInput">
                     <br>
                     <label for="miLabel">valor ingresado:</label>
                     <span id="miLabel"></span>
@@ -109,28 +110,27 @@
                 <img src="Imagenes\input_radio.png" alt="uso de formulario radio" id="img">
                 <p>Podemos observar que a diferencia del formulario anterior este usa type radio y name <br>
                 es igual en todos los inputs eso es lo que causa que solo sea elegible una opcion en concreto</p>
-            </section>
-            <!--articulo sobre curiosidades-->
-            <article>
-                <hr>
-                <h3>Curiosidades</h3>
-                <h4>Checkbox</h4>
-                <p>
-                    Para hacer que un checkbox o un radio button este seleccionado por defecto, necesitas añadir el atributo checked. No hay necesidad de agregarle un <br>
-                    valor al atributo checked. Simplemente necesitas añadir la palabra checked al elemento input, asegurándote de que hay espacios entre ella y los otros atributos.
-                </p>
-                <h4>action</h4>
-                <p>
-                    action sirve para decir a donde se mandara los datos recolectados de formulario
-                </p>
-                <h4>post</h4>
-                <p>
-                    En HTML, el método HTTP POST se utiliza dentro de un formulario (<form>) para enviar datos al servidor. Cuando un usuario completa un formulario en una página web y <br>
-                    hace clic en el botón de envío, los datos del formulario se envían al servidor utilizando el método POST.
-                </p>
-                <hr>
-            </article>
-        </div>
+        </section>
+        <!--articulo sobre curiosidades-->
+        <article class="articulos">
+            <hr>
+            <h3>Curiosidades</h3>
+            <h4>Checkbox</h4>
+            <p>
+                Para hacer que un checkbox o un radio button este seleccionado por defecto, necesitas añadir el atributo checked. No hay necesidad de agregarle un <br>
+                valor al atributo checked. Simplemente necesitas añadir la palabra checked al elemento input, asegurándote de que hay espacios entre ella y los otros atributos.
+            </p>
+            <h4>action</h4>
+            <p>
+                action sirve para decir a donde se mandara los datos recolectados de formulario
+            </p>
+            <h4>post</h4>
+            <p>
+                En HTML, el método HTTP POST se utiliza dentro de un formulario (form) para enviar datos al servidor. Cuando un usuario completa un formulario en una página web y <br>
+                hace clic en el botón de envío, los datos del formulario se envían al servidor utilizando el método POST.
+            </p>
+            <hr>
+        </article>
     </main>
     <!--fin del main-->
     <!--footer-->
