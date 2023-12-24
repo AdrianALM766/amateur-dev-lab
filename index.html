@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,33 +9,32 @@
     <link rel="shortcut icon" href="Imagenes\icono.jpg" type="image/x-icon" class="icono">
     <title>AmateurDevLab</title>
 </head>
+
 <body>
+    <!--Este es mi header-->
+    <header>
+        <!--este es mi nav contiene los enlaces a partes 
+                especificas del texto asi como un enlace a la siguiente pagina-->
+        <nav>
+            <button><a href="#Introduccion">Introduccion</a></button>
+            <button><a href="#texto">Texto</a></button>
+            <button><a href="#img_video">Imagenes y video</a></button>
+            <button><a href="#listas">listas</a></button>
+            <button><a href="#tabla">Tablas</a></button>
+            <!--enlace a la siguiente pagina-->
+            <button><a href="formularios.html">Formularios</a></button>
+        </nav>
+        <section id="Introduccion">
+            <div>
+                <h1>Introduccion</h2>
+                    <p>Esta pagina esta hecha con fines <b>educativos</b> solo se busca <br>
+                        repasar temas basicos de html si encuentras un error avisame por los <br>
+                        comentarios del repositorio en github.</p>
+            </div>
+        </section>
+    </header>
     <!--este es inicio del main-->
     <main>
-        <!--Este es mi header-->
-        <header>
-            <!--este es mi nav contiene los enlaces a partes 
-            especificas del texto asi como un enlace a la siguiente pagina-->
-            <nav>
-                <button><a href="#Introduccion">Introduccion</a></button>
-                <button><a href="#texto">Texto</a></button>
-                <button><a href="#img_video">Imagenes y video</a></button>
-                <button><a href="#listas">listas</a></button>
-                <button><a href="#tabla">Tablas</a></button>
-                <!--enlace a la siguiente pagina-->
-                <button>
-                    <a href="formularios.html"><img src="Imagenes\flecha.png" alt="formularios" width="20px"height="20px"></a>
-                </button>
-            </nav>
-            <section id="Introduccion">
-                <div>
-                    <h2>Introduccion</h2>
-                    <p>Esta pagina esta hecha con fines <b>educativos</b> solo se busca <br>
-                    repasar temas basicos de html si encuentras un error avisame por los <br>
-                    comentarios del repositorio en github.</p>
-                </div>
-            </section>
-        </header>
         <!--propiedades del texto y parrafos-->
         <section id="texto">
             <div>
@@ -42,17 +42,18 @@
                 <h3>parrafos</h3>
                 <!--explicacion de parrafos y cosas sobre texto-->
                 <p>primero explicare para que sirve cada cosa que se valla usando en esta pagina<br>
-                primero los elemtos parrafo o p, un ejemplo seria el siguiente:</p>
+                    primero los elemtos parrafo o p, un ejemplo seria el siguiente:</p>
                 <img src="Imagenes\p_parrafo.png" alt="parrafo" id="img">
                 <p>los parrafos los usamos en html para escribir texto</p>
                 <h3>cursiva y negrita</h3>
                 <p>para usar cursiva ocupamos la etiqueta i la cual dara un resultado asi: <i>esto es cursiva</i> <br>
-                asi se vera en codigo</p>
+                    asi se vera en codigo</p>
                 <img src="Imagenes\i_cursiva.png" alt="texto en cursiva" id="img">
                 <p>ahora el texto en negrita se define con la etiqueta b <b>esto es texto en negrita</b></p>
                 <img src="Imagenes\b_negrita.png" alt="texto en negrita" id="img">
                 <h3>em y strong</h3>
-                <p>los dos cumplen las mismas funciones anteriores pero tienen un orden de importancia mayor, em para cursiva y strong para negrita</p>
+                <p>los dos cumplen las mismas funciones anteriores pero tienen un orden de importancia mayor, em para
+                    cursiva y strong para negrita</p>
             </div>
         </section>
         <!--imagenes y video como usarlos-->
@@ -62,22 +63,22 @@
                 <h3>Imagenes</h3>
                 <!--que son las img y como agregarlas-->
                 <p>imagenes como habras notado todo sitio web usa imagenes en mayor o menor medida <br>
-                una imagen se define con con la etiqueta img pero eso no es todo para poder usar una <br>
-                imagen necesitas su direccion y copiarla en su src el atributo alt sirve para cuando la <br>
-                imagen no puede cargarse en el navegador<br>
-                tambien se tienen otros atributos como width y height que definen su altura y ancho aunque <br>
-                no es recomendable usarlo es mejor usar css para los estilos </p>
+                    una imagen se define con con la etiqueta img pero eso no es todo para poder usar una <br>
+                    imagen necesitas su direccion y copiarla en su src el atributo alt sirve para cuando la <br>
+                    imagen no puede cargarse en el navegador<br>
+                    tambien se tienen otros atributos como width y height que definen su altura y ancho aunque <br>
+                    no es recomendable usarlo es mejor usar css para los estilos </p>
                 <img src="Imagenes\img_imagen.png" alt="esto es una imagen" id="img">
                 <h3>Video</h3>
                 <!--video y iframe como usarlos y que son-->
                 <p>para poder usar videos en tu pagina web debemos hacer uso de la etiqueta video <br>
-                en la cual al igual que com img usamos src para el enlace pero solo eso no nos permitira<br>
-                reproducir video para que tenga los controles estandares ocupamos controls en caso de usar <br>
-                enlaces a paginas como youtube usamos iframe que nos ofrece youtube</p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/J2X5mJ3HDYE?si=6ZE7aw1Sd5wJOa0U" 
-                title="YouTube video player" frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                allowfullscreen></iframe>
+                    en la cual al igual que com img usamos src para el enlace pero solo eso no nos permitira<br>
+                    reproducir video para que tenga los controles estandares ocupamos controls en caso de usar <br>
+                    enlaces a paginas como youtube usamos iframe que nos ofrece youtube</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/J2X5mJ3HDYE?si=6ZE7aw1Sd5wJOa0U"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
                 <p><b>Algunos videos</b> de youtube tienen derechos de autor por lo general no se pueden mostrar</p>
             </div>
         </section>
@@ -86,8 +87,8 @@
             <div>
                 <h2>Listas</h2>
                 <p>las listas se dividen en dos tipos las ordenadas y las desordenadas <br>
-                Las listas ordenadas se definen con la etiqueta ol y los elementos que la <br>
-                componen como li:</p>
+                    Las listas ordenadas se definen con la etiqueta ol y los elementos que la <br>
+                    componen como li:</p>
                 <img src="Imagenes\ol_list.png" alt="lista ordenada" id="img">
                 <ol>
                     <li>Este es el primer elemento de la lista</li>
@@ -95,8 +96,8 @@
                     <li>Este es el tercer elemento de la lista</li>
                 </ol>
                 <p>por supuesto que no nos olvidamos de las listas desordenadas <br>
-                Las listas desordenadas se definen con la etiqueta ul y los elementos que la <br>
-                componen como li:</p>
+                    Las listas desordenadas se definen con la etiqueta ul y los elementos que la <br>
+                    componen como li:</p>
                 <img src="Imagenes\ul_list.png" alt="lista desordenada" id="img">
                 <ul>
                     <li>Este es el primer elemento de la lista</li>
@@ -110,9 +111,10 @@
             <div>
                 <h2>Tablas</h2>
                 <p>
-                Las tablas en HTML son elementos utilizados para organizar y presentar datos en filas y columnas. <br>
-                Cada tabla está compuesta por etiquetas específicas, como table para definir la tabla en sí, <br>
-                tr para las filas, td para las celdas dentro de las filas y <th> para las celdas de encabezado.
+                    Las tablas en HTML son elementos utilizados para organizar y presentar datos en filas y columnas.
+                    <br>
+                    Cada tabla está compuesta por etiquetas específicas, como table para definir la tabla en sí, <br>
+                    tr para las filas, td para las celdas dentro de las filas y <th> para las celdas de encabezado.
                 </p>
                 <img src="Imagenes\table.png" alt="tabla ejemplo" id="img">
                 <!--ejemplo de tablas-->
@@ -138,19 +140,13 @@
     <!--fin del main-->
     <!--footer y navegador-->
     <footer>
-        <P>
-            <button><a href="#Introduccion">Introduccion</a></button>
-            <button><a href="#texto">Texto</a></button>
-            <button><a href="#img_video">Imagenes y video</a></button>
-            <button><a href="#listas">listas</a></button>
-            <button><a href="#tabla">Tablas</a></button>
-            <button>
-                <a href="formularios.html">
-                    <img src="Imagenes\flecha.png" alt="formularios" width="20px"
-                    height="20px">
-                </a>
-            </button>
-        </P>
+        <button><a href="#Introduccion">Introduccion</a></button>
+        <button><a href="#texto">Texto</a></button>
+        <button><a href="#img_video">Imagenes y video</a></button>
+        <button><a href="#listas">listas</a></button>
+        <button><a href="#tabla">Tablas</a></button>
+        <button><a href="formularios.html">Formularios</a></button>
     </footer>
 </body>
+
 </html>
