@@ -63,7 +63,8 @@ th{
     text-decoration:underline;
 }
 table{
-    width: 60%;
+    display: inline-block;
+    width: 40%;
     margin-bottom: 25px; 
     border: rgb(217, 255, 0) solid 5px;
     margin: 25px 0px 25px 0px; 
@@ -97,11 +98,10 @@ video {
     width: 35%;
     height: 45%;
 }
-
-
 #miInput, #miLabel{
-    color: #029d5f;
+    color: #a304ff;
     margin-top: 5px;
 }
+
 
 
