@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles\style.css">
-    <link rel="icon" href="Imagenes\icono.jpg" type="image/x-icon" class="icono">
-    <link rel="shortcut icon" href="Imagenes\icono.jpg" type="image/x-icon" class="icono">
     <title>CSS</title>
 </head>
 
@@ -14,101 +12,12 @@
     <header>
         <nav>
             <button><a href="formularios.html">Formularios</a></button>
-            <button><a href="#cssU">Introduccion</a></button>
-            <button><a href="#textoc">Texto</a></button>
-            <button><a href="#fondoc">Background</a></button>
         </nav>
     </header>
     <main>
-        <section class="css">
-            <div>
-                <h1>CSS</h1>
-                <h3>Que es css y para que sirve</h3>
-                <p>
-                    CSS (Cascading Style Sheets) es un lenguaje de diseño utilizado para estilizar documentos HTML y
-                    XML. Su función principal es controlar la presentación y el diseño <br>
-                    de una página web, permitiendo cambiar el aspecto visual de los elementos HTML, como colores,
-                    fuentes, márgenes, tamaños y posicionamiento. En resumen, CSS se utiliza <br>
-                    para dar estilo y mejorar la apariencia de las páginas web.
-                </p>
-            </div>
-        </section>
-        <section class="cssU">
-            <div>
-                <h3>Crear archivo css y enlazarlo</h3>
-                <p>Como se puede esperar si solo usaramos lo que ponemos en un documento html sin aplicarle estilos el
-                    resultado seria una pagina muy plana en muchos sentidos <br>
-                    tales como la fuente del texto que el color de fondo que la alineacion, que los colores por eso aqui
-                    veremos en resumen como aplicar css a nuestra pagina web</p>
-                <p>Para primero usar css debemos crear un archivo de la siguiente forma "nombreDelArchivo.css" asi se
-                    crea un archivo de tal forma pero eso no es lo unico que se hace <br>
-                    ahora debemos vincular el archivo .css para que pueda afectar a nuestro documento .html eso lo
-                    hacemos de la siguiente forma con una etiqueta tipo link dentro del head <br>
-                    de nuestra pagina y las propiedades rel y href lo vinculamos de la siguiente forma:</p>
-                <img src="Imagenes\link_css.png" alt="como enlazar los estilos" id="img">
-            </div>
-            <div id="textoc">
-                <p>primero que nada para modificar algo debemos saber que vamos a modificar por ejemplo un elemnto p un
-                    id o una class en caso de cosas como un p normal no se hace <br>
-                    mas que p{} y dentro de las llaves aplicar css si es id es #nombreId{} y si es class es
-                    .nombreClass{} y asi eso es lo mas basico y lo que se hace antes de empezar a aplicar estilos.</p>
-                <p>Ahora que sabemos eso empezaremos por lo mas basico:</p>
-                <!--propiedades que alteran mi texto-->
-                <table>
-                    <tr>
-                        <th colspan="3">TEXTO</th>
-                    </tr>
-                    <tr>
-                        <th>Propiedad</th>
-                        <th>Valor</th>
-                        <th>Que hace?</th>
-                    </tr>
-                    <tr>
-                        <td>text-align</td>
-                        <td>center,top,left,etc</td>
-                        <td>alinea el texto segun el valor ya sea a la derecha, izquierda, arriba o abajo.</td>
-                    </tr>
-                    <tr>
-                        <td>font-size</td>
-                        <td>valor en pixeles, y porcentajes 1px o 1%</td>
-                        <td>cambia el tamaño segun el valor ya sean pixeles o porcentaje</td>
-                    </tr>
-                    <tr>
-                        <td>font-family</td>
-                        <td>Arial,Helvetica,etc</td>
-                        <td>cambia la fuente de el texto</td>
-                    </tr>
-                    <tr>
-                        <td>color</td>
-                        <td>nombre del color o rgb</td>
-                        <td>cambia el color de la fuente</td>
-                    </tr>
-                    <tr>
-                        <td>margin</td>
-                        <td>valor por pixel,porcentaje</td>
-                        <td>crea un espacio entre el contenedor y el texto tambien aplica a otros contenedores</td>
-                    </tr>
-                </table>
-            </div>
-            <div id="fondoc">
-                <table>
-                    <tr>
-                        <th colspan="3">FONDO</th>
-                    </tr>
-                    <tr>
-                        <td>background</td>
-                        <td>url(enlace),nombre del color o numero rgb</td>
-                        <td>cambia el fondo ya sea el color o por una imagen</td>
-                    </tr>
-                </table>
-            </div>
-        </section>
     </main>
     <footer>
         <button><a href="formularios.html">Formularios</a></button>
-        <button><a href="#cssU">Introduccion</a></button>
-        <button><a href="#textoc">Texto</a></button>
-        <button><a href="#fondoc">Background</a></button>
     </footer>
 </body>
 
